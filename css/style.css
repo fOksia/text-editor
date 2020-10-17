@@ -157,6 +157,7 @@ article::before {
 
 .editor__btn:hover,
 .editor__btn:focus,
-.editor__btn:active {
+.editor__btn:active,
+.editor__btn--active {
   opacity: 1;
 }
