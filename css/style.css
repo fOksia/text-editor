@@ -128,7 +128,6 @@ article::before {
   padding-right: 1rem;
   transition: border .3s ease-in;
   margin-top: -10px;
-  text-transform: ;
 }
 
 .editor__input:focus {
@@ -158,7 +157,6 @@ article::before {
 
 .editor__btn:hover,
 .editor__btn:focus,
-.editor__btn:active,
-.editor__btn--active {
+.editor__btn:active {
   opacity: 1;
 }
