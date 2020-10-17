@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 @font-face {
   font-family: 'Proxima Nova Regular';
   src: url('../fonts/proxima_nova/proxima_nova_regular.otf') format('opentype'),
@@ -96,17 +98,67 @@ article::before {
   position: absolute;
   right: 0;
   top: -100px;
-  width: 75%;
+  min-width: 75%;
   z-index: 1;
 }
 
 .editor__area {
   background-color: #181818;
   padding: 40px 0 50px 60px;
+  box-shadow: 5px 5px 60px 5px rgba(0,0,0, .16);
+
 }
 
 .editor__btns {
   background-color: #f4bb2c;
-  padding: 20px 40px;
+  padding: 18px 40px;
   margin-left: 65px;
+  box-shadow: 5px 5px 60px 5px rgba(0,0,0, .16);
+}
+
+.editor__input {
+  display: block;
+  width: 100%;
+  font: 400 4.8rem 'Playfair Display', serif;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  border-bottom: 2px solid #fff; 
+  padding-right: 1rem;
+  transition: border .3s ease-in;
+  margin-top: -10px;
+  text-transform: ;
+}
+
+.editor__input:focus {
+  border-color: rgba(255,255,255, .2);
+}
+
+.editor__label {
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Regular';
+  font-size: 1.5rem;
+  color: #767676;
+  letter-spacing: 4px;
+}
+
+.editor__btn {
+  font-size: inherit;
+  padding: 5px 10px;
+  display: inline-block;
+  width: 5.2rem;
+  border: none;
+  outline: none; 
+  background-color: transparent;
+  color: #fff;
+  opacity: .5
+  
+}
+
+.editor__btn:hover,
+.editor__btn:focus,
+.editor__btn:active,
+.editor__btn--active {
+  opacity: 1;
 }
